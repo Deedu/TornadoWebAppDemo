@@ -61,5 +61,5 @@ if __name__ == "__main__":
   #create new web app w/ websocket endpoint available at /websocket
   print ("Starting websocket server program. Awaiting client requests to open websocket ...")
   application = web.Application([(r'/websocket', WebSocketHandler)])
-  application.listen(8001)
+  application.listen(80)
   ioloop.IOLoop.instance().start()
